@@ -7,6 +7,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<NewRow />} />
+        <Route path="/:id" element={<NewRow />} />
       </Routes>
     </BrowserRouter>
   );

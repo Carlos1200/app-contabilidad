@@ -13,3 +13,10 @@ export interface ContabilidadCreate {
   salida: number;
   fecha: string;
 }
+
+export interface ContabilidadState {
+  rows: Contabilidad[];
+  addRow: (row: Contabilidad) => void;
+  setRows: (rows: Contabilidad[]) => void;
+  deleteRow: (id: number) => void;
+}

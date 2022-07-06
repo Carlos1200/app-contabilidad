@@ -15,6 +15,12 @@ fn main() {
         description: "crear contabilidad",
         sql: include_str!("../migrations/1.sql"),
         kind: MigrationKind::Up,
+      },
+      Migration {
+        version: 2,
+        description: "crear contabilidad",
+        sql: include_str!("../migrations/2.sql"),
+        kind: MigrationKind::Up,
       }],
     ))
     .menu(if cfg!(target_os = "macos") {

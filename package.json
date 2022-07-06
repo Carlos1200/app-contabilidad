@@ -19,7 +19,8 @@
     "react-hot-toast": "^2.2.0",
     "react-router-dom": "6",
     "tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql",
-    "yup": "0.32.11"
+    "yup": "0.32.11",
+    "zustand": "4.0.0-rc.1"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.2",

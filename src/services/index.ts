@@ -39,3 +39,8 @@ export const create = async (data: ContabilidadCreate) => {
     id,
   };
 };
+
+export const deleteById = async (id: number) => {
+  await load;
+  await db!.execute("DELETE FROM contabilidad WHERE id = ?", [id]);
+};
