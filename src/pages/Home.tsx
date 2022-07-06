@@ -1,7 +1,15 @@
+import { useEffect } from "react";
+import { Layout } from "../components";
+import { all } from "../services";
+
 export const Home = () => {
+  useEffect(() => {
+    all().then((data) => console.log(data));
+  });
+
   return (
-    <div>
-      <h1 className="">Home</h1>
-    </div>
+    <Layout>
+      <h1 className="text-center">Home</h1>
+    </Layout>
   );
 };

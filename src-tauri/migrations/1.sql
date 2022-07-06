@@ -4,5 +4,5 @@ CREATE TABLE contabilidad(
     entrada FLOAT NOT NULL,
     salida FLOAT NOT NULL,
     saldo FLOAT NOT NULL,
-    fecha DATE NOT NULL,
+    fecha DATE NOT NULL
 )

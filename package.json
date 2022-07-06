@@ -10,16 +10,21 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.1",
+    "formik": "2.2.9",
     "gridjs": "5.0.2",
     "gridjs-react": "5.0.2",
     "react": "^18.0.0",
+    "react-datepicker": "4.8.0",
     "react-dom": "^18.0.0",
+    "react-hot-toast": "^2.2.0",
     "react-router-dom": "6",
-    "tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql"
+    "tauri-plugin-sql-api": "github:tauri-apps/tauri-plugin-sql",
+    "yup": "0.32.11"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.2",
     "@types/react": "^18.0.0",
+    "@types/react-datepicker": "^4.4.2",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.7",
