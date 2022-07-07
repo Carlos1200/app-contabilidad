@@ -13,23 +13,26 @@ export const Table = ({ data, columns }: TableProps) => {
     <Grid
       data={data}
       columns={columns}
-      sort
+      search={{
+        enabled: true,
+        ignoreHiddenColumns: true,
+      }}
       pagination={{
         limit: 8,
         enabled: true,
       }}
       style={{
         th: {
-          backgroundColor: "#27496D",
+          backgroundColor: "#525252",
           color: "#fff",
         },
         td: {
-          backgroundColor: "#142850",
+          backgroundColor: "#262626",
           color: "#fff",
         },
       }}
       className={{
-        table: "w-full",
+        table: "w-full bg-neutral-800",
       }}
     />
   );

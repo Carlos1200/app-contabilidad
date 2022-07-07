@@ -1,6 +1,6 @@
 import * as Yup from "yup";
 
-export const schema = Yup.object({
+export const rowSchema = Yup.object({
   concepto: Yup.string().required("Este campo es requerido"),
   entrada: Yup.number()
     .typeError("Debe ser un número")
@@ -8,4 +8,8 @@ export const schema = Yup.object({
   salida: Yup.number()
     .typeError("Debe ser un número")
     .required("Este campo es requerido"),
+});
+
+export const cuentaSchema = Yup.object({
+  nombre: Yup.string().required("Este campo es requerido"),
 });

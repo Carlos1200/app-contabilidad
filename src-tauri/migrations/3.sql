@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS contabilidad;
+
+CREATE TABLE cuenta(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    saldo FLOAT NOT NULL
+);
+
+CREATE TABLE contabilidad(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    concepto VARCHAR(255) NOT NULL,
+    entrada FLOAT NOT NULL,
+    salida FLOAT NOT NULL,
+    fecha VARCHAR(100) NOT NULL,
+    cuenta_id INTEGER NOT NULL,
+    FOREIGN KEY(cuenta_id) REFERENCES cuenta(id)
+);

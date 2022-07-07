@@ -2,7 +2,6 @@
   all(not(debug_assertions), target_os = "windows"),
   windows_subsystem = "windows"
 )]
-
 use tauri_plugin_sql::{Migration, MigrationKind, TauriSql};
 
 fn main() {
@@ -21,7 +20,14 @@ fn main() {
         description: "crear contabilidad",
         sql: include_str!("../migrations/2.sql"),
         kind: MigrationKind::Up,
-      }],
+      },
+      Migration {
+        version: 3,
+        description: "crear contabilidad",
+        sql: include_str!("../migrations/3.sql"),
+        kind: MigrationKind::Up,
+      },
+      ],
     ))
     .menu(if cfg!(target_os = "macos") {
       tauri::Menu::os_default(&context.package_info().name)
